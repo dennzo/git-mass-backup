@@ -43,8 +43,8 @@ compressed_backup/
             └── Project.tar.gz
 ```
 
-- gitlab_backup/: Temporary directory where repositories are cloned as mirrors.
-- compressed_backup/: Final destination for compressed .tar.gz archives.
+- `gitlab_backup/`: Temporary directory where repositories are cloned as mirrors.
+- `compressed_backup/`: Final destination for compressed .tar.gz archives.
 
 After the script completes, the gitlab_backup folder is automatically removed, leaving only the archives.
 
@@ -57,6 +57,7 @@ After the script completes, the gitlab_backup folder is automatically removed, l
 - Extend support to other Git platforms like GitHub by implementing platform-specific APIs.
 - Add an option for incremental backups, only updating archives for repositories with new commits.
 - Implement a logging mechanism to track the status of each repository during execution.
+- Implement ability to also archive inactive repositories (Adjustable via environment variable)
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
